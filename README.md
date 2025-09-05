@@ -24,9 +24,9 @@ This repo contains **no secrets** and includes sample environment variables for 
 - Spotify account
 - (Optional) Meta WhatsApp Cloud API account & a pre-approved template
 
-\`\`\`bash
+```bash
 pip install spotipy python-dateutil requests
-\`\`\`
+```
 
 ## Environment Variables
 
@@ -54,23 +54,23 @@ Create a `.env` (or export in your shell/CI) using the keys below. See `.env.exa
 
 ## Running
 
-\`\`\`bash
-# 1) (optional) load env vars
-# macOS/Linux
-export $(grep -v '^#' .env | xargs)
+```bash
+# 1) (optional) load env vars```
+### macOS/Linux
+```export $(grep -v '^#' .env | xargs)```
 
 # 2) run the script
 python auto_save_new_podcasts.py
-\`\`\`
+```
 
 On first run you’ll complete Spotify OAuth in the browser. A cache file is written under `spotify_autosave/`.
 
 ### Automate (cron / Task Scheduler)
 
 **cron (Linux/macOS)**
-\`\`\`
+```
 0 8 * * * /usr/bin/env bash -lc 'cd /path/to/repo && export $(grep -v "^#" .env | xargs) && /usr/bin/python3 auto_save_new_podcasts.py >> cron.log 2>&1'
-\`\`\`
+```
 
 **Windows Task Scheduler**
 - Action: `python.exe`  
