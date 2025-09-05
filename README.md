@@ -24,6 +24,8 @@ This repo contains **no secrets** and includes sample environment variables for 
 - Spotify account
 - (Optional) Meta WhatsApp Cloud API account & a pre-approved template
 
+Set up your Spotify API access here: [Spotify Developer Platform](https://developer.spotify.com/documentation/web-api)
+
 ```bash
 pip install spotipy python-dateutil requests
 ```
