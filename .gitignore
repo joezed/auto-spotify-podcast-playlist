@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.env.*
+venv/
+.venv/
+.envrc
+
+# App data
+spotify_autosave/autosave.log
+spotify_autosave/spotify_cache.json
+spotify_autosave/podcast_state.json
+
+# OS
+.DS_Store
+Thumbs.db
