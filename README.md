@@ -86,7 +86,9 @@ You’ll need two **pre-approved** templates in Meta:
   2. short list of show names (e.g., `The Daily, Cortex, and more`)
 - `autosave_none` (language `en`) with **no variables**
 
-If you prefer different names, set `WA_TPL_ADDED` and `WA_TPL_NONE`.
+If you prefer different names, set `WA_TPL_ADDED` and `WA_TPL_NONE`.  
+
+Set them up here: [Meta Developers Platform](https://developers.facebook.com/apps/)
 
 ## Logs & State
 
